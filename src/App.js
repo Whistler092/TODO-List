@@ -19,8 +19,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container" style={{ marginTop: "3em" }}>
-          <h1>MY FUCKING TODO LIST</h1>
-          <strong>With react+redux</strong>
+          <h1>Pending tasks </h1>
+          <strong>... of the day</strong>
           <div className="row" style={{ marginTop: "3em" }}>
             <div className="col-lg-10 offset-lg-2 col-md-10 col-sm-12 col-xs-12">
               <Clock
