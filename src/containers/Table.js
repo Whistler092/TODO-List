@@ -32,7 +32,7 @@ function ShowItemsList({ todosList, deleteTodo, toggleTodo }) {
             {todosList.map(todo => (
                 <tr key={todo.id}>
                     <td style={{ textDecoration: todo.completed ? "line-through" : "none" }}>
-                        {todo.text} {todo.completed === true ? "(Completed)" : ""}
+                        {todo.completed === true ? "✅ " : "📌 "}{todo.text} 
                     </td>
                     <td>
                         <span className="fas fa-minus-circle"
