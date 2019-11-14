@@ -23,6 +23,14 @@ class CreateTodo extends Component {
         this.onChangeTodoText = this.onChangeTodoText.bind(this)
     }
 
+    handleKeyDown = (e) => {
+        console.log("handleKeyDown", e)
+        if (e.key === 'Enter') {
+            this.props.addTodo(this.state.todotext);
+            this.setState({ todotext : '' })
+        }
+      }
+
     onChangeTodoText(e){
         this.setState({
             todotext: e.target.value
@@ -38,7 +46,8 @@ class CreateTodo extends Component {
                             type="text"
                             className="form-control"
                             id="todotext"
-                            placeholder="add todo here" />
+                            placeholder="add todo here" 
+                            onKeyDown={this.handleKeyDown} />
 
                     <button type="button" 
                             onClick={() => this.setState({ todotext: '' })}
