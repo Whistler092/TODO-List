@@ -64,8 +64,8 @@ function ShowNoItemsMessage() {
 class Table extends Component {
     render() {
         return (
-            <div className="col-lg-10 offset-lg-1 col-md-10 col-sm-12 col-xs-12">
-                <nav style={{ marginTop: "60px" }}>
+            <div className="col-lg-12 offset-lg-1 col-md-10 col-sm-12 col-xs-12">
+                <nav >
                     <ol className="breadcrumb">
                         <li
                             className={"breadcrumb-item " + (this.props.visibilityFilter === SHOW_ALL ? 'active' : '')}

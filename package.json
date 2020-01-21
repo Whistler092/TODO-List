@@ -2,7 +2,7 @@
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://whistler092.github.io/TODO-List",
+  "homepage": "http://todo.ramirobedoya.me/",
   "dependencies": {
     "react": "^16.11.0",
     "react-clock": "^2.4.0",
